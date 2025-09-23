@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaruri Sheba</title>
+    <!-- Daisy and Tailwind CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- FontAwesome -->
+ <script src="https://kit.fontawesome.com/ebf316517c.js" crossorigin="anonymous"></script>
+ <!-- Google Font -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+</style>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body class="hind-madurai">
+    <nav class="w-11/12 mx-auto py-5 flex justify-between items-center">
+        <div class="flex items-center gap-[20px]">
+            <img src="./jaruri-assets/logo.png" alt="" class="w-[70px]">
+            <h1 class="text-[35px] font-extrabold text-[#006747] w-[135px]">Emergency Service</h1>
+        </div>
+        <div class="flex gap-[20px]">
+            <button class="btn bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px]">
+                <span id="heart-count" class="flex justify-center items-center gap-4 font-bold text-2xl">0 <img src="./jaruri-assets/heart.png" alt="" class="w-[30px]"></span>
+            </button>
+            <button class="btn bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px]">
+                <span id="coin-count" class="flex justify-center items-center gap-4 font-bold text-2xl">100 <img src="./jaruri-assets/coin.png" alt="" class="w-[30px]"></span>
+            </button>
+            <button class="btn bg-[#00A63E] w-[123px] h-[52px] rounded-[50px] font-bold text-[#FFFFFF]">
+                <span id="copy-count">0 </span>
+                Copy
+            </button>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+    <div class="bg-gradient-to-r from-[#013223] to-[#006747] py-8">
+        <img src="./jaruri-assets/logo.png" alt="" class="mx-auto">
+        <h1 class="text-white text-[40px] font-bold text-center">Emergency Service Directory</h1>
+        <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+<!-- Jaruri Contact -->
+    <main class="bg-[#f5fff6]">
+        <section class="contact-container w-11/12 mx-auto my-8 grid grid-cols-12 gap-3">
+            <!-- Contact Details -->
+<!-- Contact-items -->
+        <section class=" contact-items col-span-9">
+            <div id="card-containder" class="grid grid-cols-3 gap-4 ">
+<!-- Contact-1 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-3">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">National Emergency Number</h1>
+                <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">999</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                All
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy
+                </button>
+                
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2 copy-btn"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-2 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Police Helpline Number</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Police</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">999</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Police
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-3 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Fire Service Number</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Fire Service</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">999</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Fire
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-4 -->           
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Ambulance Service</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Ambulance</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">1994-999999</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Health
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-5 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Women & Child Helpline</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">109</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Help
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-6 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Anti-Corruption Helpline</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Anti-Corruption</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">106</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Govt.
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-7 -->           
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Electricity Helpline</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Electricity Outage</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">16216</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Electricity
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-8 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-5">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Brac Helpline</h1>
+                <p class="text-[18px] text-[#5C5C5C]">Brac</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">16445</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                NGO
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+<!-- Contact-9 -->
+           <div class="contact-cards shadow-2xl bg-white rounded-2xl p-3">
+                 <div class="card-img flex justify-between items-center">
+                <img src="./jaruri-assets/emergency.png" alt="" class=" bg-[#ffe3e2] rounded-xl">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div>
+                <h1 class="card-title font-bold text-[24px]">Bangladesh Railway Helpline </h1>
+                <p class="text-[18px] text-[#5C5C5C]">Bangladesh Railway</p>
+            </div>
+            <div>
+                <h1 class="emergency-number font-bold text-[32px] pb-4">163</h1>
+                <button class="btn bg-[#f2f2f2] rounded-[50px] font-bold text-[#5C5C5C] text-[18px]">
+                Travel
+                </button>
+            </div>
+            <div class="flex gap-2 py-5">
+                <button class="btn shadow-2xl bg-[#ffffff] border-[#d4d6d5] w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+                <button class="call-btn btn shadow-2xl bg-[#00A63E] text-white border-[#d4d6d5] w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+
+           </div>
+            </div>
+        </section>
+
+        <!-- Contact History -->
+        <aside class="shadow-2xl bg-white rounded-2xl p-3 col-span-3">
+            <div class="flex justify-between items-center m-5">
+                <div class="flex justify-around items-center gap-3">
+                <i class="fa-regular fa-clock"></i>
+                <h1 class="text-[20px] font-medium">Call History</h1>
+                </div>
+                <div>
+                    <button class="btn bg-[#00A63E] rounded-4xl text-[#FFFFFF]">
+                    Clear
+                </button>
+                </div>
+            </div>
+        </aside>
+        </section>
+    </main>
+
+
+
+    <!-- js Link -->
+     <script src="./script.js"></script>
+</body>
+</html>
