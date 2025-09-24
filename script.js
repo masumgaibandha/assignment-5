@@ -14,49 +14,22 @@ getElement('card-containder').addEventListener('click', function(e){
     }
 
 // Number copy part
-  const copyIcon = e.target.closest('.fa-copy');      
-  const copyBtn  = e.target.closest('button');         
 
-  const isCopyClick =
-    !!copyIcon || (copyBtn && copyBtn.textContent.trim().toLowerCase().startsWith('copy'));
+if (e.target.classList.contains('fa-copy') || e.target.innerText.toLowerCase().includes('copy')) {
+  const card = e.target.closest('.contact-cards');
+  if (!card) return;
 
-  if (isCopyClick) {
-    const card  = (copyIcon || copyBtn).closest('.contact-cards');
-    if (!card) return;
+  const number = card.querySelector('.emergency-number').innerText.trim();
 
-    const numEl = card.querySelector('.emergency-number');
-    if (!numEl) return;
+  const copyCount = getElement('copy-count');
+  copyCount.innerText = (parseInt(copyCount.innerText) || 0) + 1;
 
-    const number = numEl.textContent.trim();
-    // copy count
-     const copyCount = getElement('copy-count');
-        if(copyCount){
-         const currentCopy = parseInt(copyCount.firstChild.textContent) || 0;
-        copyCount.firstChild.textContent = (currentCopy + 1) + " ";
-        }
+  navigator.clipboard.writeText(number)
+    .then(() => alert(`Number Copied: ${number}`))
+    .catch(err => console.error('Copy failed:', err));
+}
 
-
-    
-    if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(number)
-        .then(() => alert('Number Copied: ' + number))
-        .catch(err => console.error('Clipboard failed:', err));
-    } else {
-      const ta = document.createElement('textarea');
-      ta.value = number;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy');
-        alert('Copied: ' + number);
-      } catch (err) {
-        console.error('Fallback copy failed:', err);
-      }
-      document.body.removeChild(ta);
-    }
-  }
+ 
 // call count
         const callBtn = e.target.closest('.call-btn');
         if(callBtn){
@@ -95,7 +68,7 @@ getElement('card-containder').addEventListener('click', function(e){
         }
 
 })
-
+// Clear BTN
 document.getElementById('btn-clear').addEventListener('click', function () {
   const callContainer = document.getElementById('call-container');
   callContainer.innerHTML = '';
