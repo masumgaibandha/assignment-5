@@ -6,13 +6,12 @@ function getElement(id){
 }
 
 getElement('card-containder').addEventListener('click', function(e){
+   // Heart count part
     if(e.target.className.includes('fa-heart')){
-        // Heart increase part
        const heartCount = getElement('heart-count');
        const currentTotal = parseInt(heartCount.firstChild.textContent) || 0;
        heartCount.firstChild.textContent = (currentTotal + 1) + " ";
     }
-    
 
 // Number copy part
   const copyIcon = e.target.closest('.fa-copy');      
@@ -74,6 +73,25 @@ getElement('card-containder').addEventListener('click', function(e){
         }
         coinSpan.firstChild.textContent = (currentCoins - 20) + ' ';
         alert(`Calling ${title} ${number}`);
+// HTML append
+    const callContainer = getElement('call-container');
+  if (callContainer) {
+    const realTime = new Date().toLocaleTimeString();
+    const newCallHistory = document.createElement('div');
+    newCallHistory.innerHTML = `
+      <div class="bg-[#fafafa] rounded flex justify-between items-center p-3 mb-4">
+        <div>
+          <h1 class="font-semibold text-[18px]">${title}</h1>
+          <span class="text-[#5C5C5C] text-[18px]">${number}</span>
+        </div>
+        <div>
+          <h1>${realTime}</h1>
+        </div>
+      </div>
+    `
+    callContainer.appendChild(newCallHistory); 
+  }
+
         }
 
 })
