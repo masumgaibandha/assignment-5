@@ -89,9 +89,14 @@ getElement('card-containder').addEventListener('click', function(e){
         </div>
       </div>
     `
-    callContainer.appendChild(newCallHistory); 
+    callContainer.prepend(newCallHistory); 
   }
 
         }
 
 })
+
+document.getElementById('btn-clear').addEventListener('click', function () {
+  const callContainer = document.getElementById('call-container');
+  callContainer.innerHTML = '';
+});
