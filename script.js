@@ -1,5 +1,3 @@
-console.log('connected')
-
 function getElement(id){
     const element = document.getElementById(id);
     return element; 
@@ -15,7 +13,9 @@ getElement('card-containder').addEventListener('click', function(e){
 
 // Number copy part
 
-if (e.target.classList.contains('fa-copy') || e.target.innerText.toLowerCase().includes('copy')) {
+if (e.target.classList.contains('fa-copy') || e.target.innerText.toLowerCase().includes('copy')) 
+  
+  {
   const card = e.target.closest('.contact-cards');
   if (!card) return;
 
